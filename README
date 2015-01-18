@@ -1,0 +1,28 @@
+Description
+***********
+
+gridman is the general mesh library. It reads mesh and
+assigns element and element faces and boundary information.
+Cell.cpp has routines to compute quadrature based integrals
+for terms from the weak form. 
+
+Solver contains the main solver files. It is currently rigged
+to solve the inviscid Burger's equation. The inviscidflux function
+can be modified to do the Euler equations as well.
+
+How to run
+*********
+
+Go to obj folder and invoke make.
+move the exe file to the test folder
+
+Go to test folder, and do ./euler.exe
+The inputs-DG sets polynomial order and time steps etc.
+
+The output files are written unstructured vtu format. It
+can be read by paraview. The initial and final.dat files
+are extracted along the center line. It contains 6 columns.
+First column is the coordinate and 2-6 are the conserved
+variable values. To plot solution on gnuplot, use
+gnuplot> plot 'initial.dat' u 1:2 w l,'final.dat' u 1:2 w l
+
