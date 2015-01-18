@@ -1,0 +1,6 @@
+<meshfilename>  boxmesh_1d 
+<poly_order>   	3
+<maxtimesteps>	200
+<timestep>	0.005
+<finaltime>	4.0
+<timealgo>	RK2
