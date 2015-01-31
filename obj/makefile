@@ -1,5 +1,5 @@
 GRIDMANDIR=../gridman
-CONVDIFFDIR = ../Acoustics
+CONVDIFFDIR = ../solver
 BUILDDIR = .
 
 
